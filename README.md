@@ -9,7 +9,7 @@ Engineering documentation for **XLR8**, a self-driving LEGO SPIKE Prime vehicle 
 | Folder | Content |
 |---|---|
 | [`t-photos`](t-photos/) | Team photos (official + funny) |
-| [`v-photos`](v-photos/) | 6 photos of the vehicle — front, back, left, right, top, bottom |
+| [`v-photos`](v-photos/) | 6 photos of the vehicle — front, back, left, right, top, bottom from national competition to the version for international final at Puerto Rico|
 | [`video`](video/) | Links to the driving-demonstration videos (open + obstacle rounds) |
 | [`schemes`](schemes/) | Electromechanical wiring diagram and annotated component photos |
 | [`src`](src/) | Control software (hub + camera) |
@@ -56,9 +56,9 @@ CAD source and 3D-printable parts for the assembly above are in [`models/`](mode
 | | | |
 |---|---|---|
 | Front | Back | Top |
-| ![Front view](v-photos/front.jpg) | ![Back view](v-photos/back.jpg) | ![Top view](v-photos/top.jpg) |
+| ![Front view](v-photos/national-front.jpg) | ![Back view](v-photos/national-back.jpg) | ![Top view](v-photos/national-top.jpg) |
 | Left | Right | Bottom |
-| ![Left view](v-photos/left.jpg) | ![Right view](v-photos/right.jpg) | ![Bottom view](v-photos/bottom.jpg) |
+| ![Left view](v-photos/national-left.jpg) | ![Right view](v-photos/national-right.jpg) | ![Bottom view](v-photos/national-bottom.jpg) |
 
 ## 3. Mobility and Mechanical Design
 
@@ -428,3 +428,5 @@ Full source: [`src/hub/FeObstacle.py`](src/hub/FeObstacle.py).
 This robot is the result of an iterative engineering process: build something that works, test on the real field, find a concrete failure, fix it, test again. Every design choice — from steering geometry and sensor placement to the chassis structure and the heading estimator — was driven by data from that loop rather than decided on paper in advance.
 
 The robot can currently complete both the Open and Obstacle challenges reliably; future work will focus on reducing chassis weight, optimizing the drivetrain, improving the vision pipeline, and continuing to refine the control software for speed and accuracy. This documentation is meant to let anyone understand, reproduce and extend what we built.
+
+

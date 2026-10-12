@@ -1,6 +1,9 @@
 Robot's Detailed Construction Guide
 ====
 
+
+### Guide for robot's assembly for national competition in July 2026
+
 This guide is a comprehensive, step-by-step walkthrough of the assembly of our autonomous robot for the **2026 WRO Future Engineers** competition. The assembly is organized into individual modules — the rear camera mount, the main chassis, and other key subsystems. Each section describes the assembly procedure and the connections between components, enabling readers to understand the robot's structure and accurately reproduce the complete model.
 
 ## Assembly overview
@@ -68,3 +71,54 @@ Upon completing the four assembly stages, the robot is fully constructed and rea
 Throughout the construction process, particular attention should be given to the alignment of the drivetrain, steering mechanism, and sensors, as even minor assembly inaccuracies can affect the robot's overall performance. By following the procedures described in this guide, readers should be able to accurately reproduce our robot and obtain a mechanically stable platform suitable for autonomous operation.
 
 See the [main README](../README.md) for the robot's electrical architecture, wiring layout, and software implementation — how the assembled hardware is integrated into a fully functional autonomous system.
+
+
+
+### Guide for robot's assembly for international competition in December 2026
+## Assembly overview
+
+The robot consists of three main sections:
+
+* **Rear Camera Assembly** — 1 Matrix M-Vision Camera mounted on a support structure constructed from LEGO Technic beams and connectors.
+* **Upper Chassis** — 1 LEGO SPIKE Prime Hub with a rechargeable battery, 2 LEGO SPIKE Prime Large Angular Motors, and 2 ultrasonic sensors, all mounted using LEGO Technic connectors and structural reinforcement components.
+* **Lower Chassis** — 2 LEGO Technic wheels (56 × 14 mm), 2 LEGO Technic wheels (56 x 28mm), 1 LEGO SPIKE Prime Color Sensor, and the drivetrain consisting of LEGO Technic gears, axles, and connector elements.
+
+## Step 1: Preparing the 3D-printed parts
+
+![3D-printed parts for robot assembly](Step1_3D_printed_parts_international.jpg)
+
+As illustrated in the file (Step1_3D_printed_parts_international.jpg), our robot relies on a set of four bespoke 3D-printed pieces. These unique additions form the backbone of the build, securely locking various subsystems together into one highly durable chassis. Standard LEGO Technic elements simply cannot achieve the specific shapes needed here; attempting to swap them out would drastically weaken the machine and hinder its performance. By engineering these custom mounts, we achieved a space-saving, incredibly sturdy framework that perfectly interfaces with the rest of our traditional LEGO components.
+
+The CAD source files for these 3D-printed components are in [`../models/`](../models/).
+
+**Material recommendations.** All custom parts for our robot are 3D-printed using PLA filament. PLA was chosen for its ease of printing, good dimensional accuracy, and sufficient strength for our application. The main chassis, motor mounts, sensor brackets, and camera support mast are all printed in PLA, as the material provides adequate rigidity and impact resistance for the robot's operational loads while remaining lightweight. PLA also allows for fast iteration during testing, enabling us to refine designs quickly between practice sessions.
+
+
+## Step 2: Assembling the rear camera-mounted section
+
+![Rear camera assembly](Step2_RearCamSupportBeam_assembly.jpg)
+
+The rear camera assembly remains mechanically independent from the main chassis, ensuring easy integration and maintenance. We retained the core camera-mounting section from our national competition design, as its tilt is perfectly optimized for the ideal viewing angle. However, during the national round, we experienced a critical structural failure where the original support beam gave way. This caused the camera to crash into the ground, forcing us to replace it with a brand-new unit.
+
+To ensure this never happens again during the rigorous maneuvers of the obstacle challenge, the supporting structure has been significantly upgraded. It now features a redesigned 3D-printed assembly with a sturdy horizontal support bridging the two vertical beams. This crucial addition drastically increases the overall rigidity, securely locking the camera in place and preventing any parts from dislocating if the robot accidentally impacts walls or traffic light blocks.
+
+
+
+## Step 3: Assembling the upper chassis section
+
+The upper chassis assembly is the second most complex subsystem of the robot. Although it integrates several major electronic and structural components, its modular design allows it to be assembled efficiently by following the steps outlined below.
+
+The construction process starts with the LEGO SPIKE Prime Hub and its installed rechargeable battery, acting as both the core physical framework and the primary processing brain of the machine. The previously printed rear camera module is then attached to the rear of the hub using the LEGO technical pin and LEGO technical (1 x 13) beam.
+
+An additional 4 pieces of LEGO Technic Axle and Pin Connector Angled 2 is mounted below the SPIKE Prime Hub to connected to the lower axis and drivestrain is used to prevent unwanted movement of the hub during operation. These components also add structural strength to the back of the frame, guaranteeing that the hub stays tightly locked in place even when subjected to the shaking and physical stress of active movement.
+
+At the front of the hub, the controller for the MBC Laser sensor is securely mounted using LEGO Technic pins. This strategic placement helps centralize the robot's overall center of gravity, preventing the chassis from tilting forward. Maintaining this balanced weight distribution is crucial for executing the precise, stable movements required to navigate the obstacle challenge successfully.
+
+## Step 4: Assembling the lower chassis section
+For the international robot, the lower chassis prioritizes a streamlined, simplified design that still maintains the necessary intricacy to house critical drivetrain components. This assembly precisely integrates the differential gear, the light sensor, and a tightly interlocked gear system to maximize mechanical efficiency at the wheels. This careful configuration ensures high-speed performance on the track without sacrificing too much of the robot's foundational torque and driving power.
+
+![New lower chassis, top-down](step4_New_lower_chassis.jpg)
+
+The front wheel setup connects two LEGO SPIKE Prime wheels via a single steering axle driven by the upper chassis servo, delivering synchronized steering control. Configured around Ackermann steering geometry, this mechanism maximizes cornering accuracy while minimizing wheel drag during tight turns.
+
+At the front of the lower frame, the LEGO SPIKE Prime Color Sensor provides accurate line tracking while its mounting structure physically bridges the steering components, adding extra strength to the front end. Together, these elements form a compact, highly rigid lower chassis engineered for responsive handling, efficient power delivery, and consistent sensor performance under race conditions.
